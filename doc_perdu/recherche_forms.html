@@ -1,0 +1,7 @@
+<form method="get" action="{% url 'documents_liste'%}" class="search_form">
+	{% csrf_token %}
+
+	<input type="text" class="input-block-level search-query" name="query" Placeholder='Nom du propriétaire' style="color:black;">	
+	<button type='submit' class="search-btn">RECHERCHE</button>
+
+</form>

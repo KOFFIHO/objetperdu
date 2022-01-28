@@ -1,0 +1,20 @@
+<form method="get" action="{% url 'recherche_forms'%}" class="search_form">
+	{% csrf_token %}
+
+	<input type="text" class="input-block-level search-query" name="query" Placeholder='Nom du propriétaire' style="color:black;">	
+	<!-- <div class="row">
+		<ul>
+			<li class="span12">
+				<select name="ville">				
+					{% for vil in villes %}
+						<option value="{{vil.id}}">
+							{{vil.nom}}
+						</option>
+					{% endfor %}
+				</select>
+			</li>
+		</ul>
+	</div> -->
+	<button type='submit' class="search-btn">RECHERCHE</button>
+
+</form>
